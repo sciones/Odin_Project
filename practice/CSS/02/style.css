@@ -1,0 +1,20 @@
+p { 
+	background-color: #FFCCCB;
+    font-family: Verdana, DejaVu Sans, sans-serif;
+}
+
+#one { 
+	color: blue;
+	font-size: 36px;
+}
+
+.size24 {
+	font-size: 24px;
+}
+
+#another {
+	background-color: green;
+	font-weight: bold;
+}
+
+	
