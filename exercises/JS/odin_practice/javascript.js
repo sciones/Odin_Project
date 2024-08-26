@@ -24,8 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
   container.appendChild(div);
 
   const btn = document.querySelector("#btn");
-  btn.addEventListener("click", () => {
-    alert("Hello World");
+  btn.addEventListener("click", function (e) {
+    console.log(e.target);
+    console.log(e);
+    console.log(e.timeStamp);
   });
 });
 

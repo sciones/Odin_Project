@@ -40,7 +40,24 @@
       function getdata() {
         let data = inputEle.value;
         inputEle.value = '';
-      } 
+        const liEle = document.createElement("li");
+        const spanEle = document.createElement("span");
+        const buttonEle2 = document.createElement("button");
+
+        liEle.appendChild(spanEle);
+        liEle.appendChild(buttonEle2);
+
+        spanEle.textContent = data;
+        buttonEle2.textContent = "Delete";
+
+        ulEle.appendChild(liEle);
+
+        buttonEle2.addEventListener("click", () => {
+          liEle.remove()
+        });
+
+        inputEle.focus();
+      }       
 
     </script>
   </body>
