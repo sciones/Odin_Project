@@ -21,6 +21,8 @@ array = [1,2,3,4,5];
 
 console.log("Sum: " + sumOfTripledEvens(array));
 
+/*********************************************************/
+
 function Original_sumOfTripledEvens(array) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
@@ -34,4 +36,12 @@ function Original_sumOfTripledEvens(array) {
       }
     }
     return sum;
+  }
+
+  /*********************************************************/
+  function Solution_sumOfTripledEvens(array) {
+    return array
+      .filter((num) => num % 2 === 0)
+      .map((num) => num * 3)
+      .reduce((acc, curr) => acc + curr);
   }
